@@ -1,5 +1,5 @@
 # Gesture Recognition
-> We build a CNN/RNN based model that can accurately recognize and interpret gestures performed by users in videos captured by a webcam. 
+> We build a CNN based model that can accurately recognize and interpret gestures performed by users in videos captured by a webcam. 
  
 
 
