@@ -1,5 +1,5 @@
 # Gesture Recognition
-> We build a CNN based model that can accurately recognize and interpret gestures performed by users in videos captured by a webcam. 
+> We build a CNN-based model that can accurately recognize and interpret gestures performed by users in videos captured by a webcam. 
  
 
 
@@ -16,9 +16,9 @@
 - The problem at hand involves developing a feature for smart televisions that can recognize and interpret 
 different gestures performed by users.
 - These gestures are monitored by the TV's built-in webcam and correspond to specific commands. 
-- In this project, we use CNN/RNN based model that can accurately recognize and interpret 5 gestures performed by users in videos captured by a webcam.
+- In this project, we use a 3D CNN-based model that can accurately recognize and interpret 5 user gestures in videos captured by a webcam.
 - The training and validation data is formed from the [Kaggle](https://www.kaggle.com/datasets/imsparsh/gesture-recognition).
-- We build upon one CNN/RNN based model architecture.
+- We build upon one 3D CNN-based model architecture.
 - The 5 gestures are given below
 
 Gesture | Interpretation
