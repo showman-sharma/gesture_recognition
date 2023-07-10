@@ -31,18 +31,27 @@ Stop | Pause the movie
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Results
-- Both Conv3D and RNN-based models were considered in the experiments.
-- For 3D convolution, the base model was a single Conv3D layer model.
-- For RNN, a basic model with 1 Conv2D, 1 GRU, and 1 Dense layer was employed.
-- Using the Conv3D-based model, we were able to best achieve 74% validation accuracy.
--  Using LSTM based model, we were able to best achieve 71% validation accuracy
--  Both are decent results. But let's compare the total number of parameters:
-    - Conv3D-based model: 17,393,797
-    - LSTM-based model: 1,186,885
+- We considered Conv3D-based models in the experiments.
+- For 3D convolution, the base model was a COnv3D layer, followed by a deep layer and an output layer.
+- Our final model turned out to be the simplest conceivable model: A conv3D layer and output layer.
+- 89% training accuracy
+- 87% validation accuracy
+- 0.13 MB size
+- 35337 parameters
 
 ## Conclusions
-- With just 7% of the parameters used by the Conv3D-based model, our LSTM-based model brings about the same accuracy (71% validation accuracy).
-- Thus, the LSTM-based model would be our final model
+Our model is merely 0.13MB and can give about 89% and 87% accuracy on our training and validation data respectively. 
+
+Such a light-weighing model would best suit our real-time application. Even our normalization process is fast since we just divide by 255 without spending time on computing mean and std dev. This makes our model extremely fast in runtime.
+
+Since this is a real-time application of gesture recognition with quick movements, gesturing twice wouldn't be much of an inconvenience
+and assuming an average accuracy of 88%, the probability of making an error twice would be just ~1.4%. 
+
+This means that the probability of getting it rightly recognized in at most 2 attempts would be 98.6%, which is pretty high. 
+
+
+
+**HENCE, OUR CURRENT MODEL IS PERFECTLY SUITABLE FOR THE ONLINE GESTURE RECOGNITION APPLICATION**
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
